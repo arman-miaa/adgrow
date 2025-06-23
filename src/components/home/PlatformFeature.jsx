@@ -23,9 +23,9 @@ const tabs = [
     icon: <Image className="w-4 h-4" />,
     image: featureImg2,
     steps: [
-      "AI generates high-quality visuals",
-      "Edit & customize easily",
-      "Save ready-to-use creative assets",
+      "Boost CTR by 300% with Proven Templates",
+      "Effortless AI Video Creation and Image ads",
+      "Integrated with Virtual Photoshoots",
     ],
   },
   {
@@ -34,9 +34,9 @@ const tabs = [
     icon: <BarChart3 className="w-4 h-4" />,
     image: featureImg3,
     steps: [
-      "Track ad performance metrics",
-      "Identify trends & user behavior",
-      "Get actionable insights instantly",
+      "Get comprehensive campaign insights",
+      "AI-Powered Performance Analysis",
+      "Identify optimization opportunities",
     ],
   },
   {
@@ -45,9 +45,9 @@ const tabs = [
     icon: <Settings2 className="w-4 h-4" />,
     image: featureImg4,
     steps: [
-      "Adjust targeting based on data",
-      "Publish directly to Meta Ads Manager",
-      "Automated optimization suggestions",
+      "One-Click AI Optimization",
+      "Direct Publishing to Meta Ads",
+      "Performance Analytics Dashboard",
     ],
   },
 ];
@@ -60,13 +60,13 @@ const PlatformFeature = () => {
     <section className="bg-[#f9fafb] py-20 px-4 text-center">
       {/* Title */}
       <div className="max-w-3xl mx-auto mb-10">
-        <p className="text-sm font-semibold text-blue-600 bg-blue-100 w-fit mx-auto px-4 py-1 rounded-full mb-2">
+        <p className="text-sm font-semibold text-blue-500 bg-blue-100 w-fit mx-auto px-4 py-1 rounded-full mb-4">
           PLATFORM FEATURES
         </p>
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
-          Complete <span className="text-blue-500">Meta Ads</span> Workflow
+        <h2 className="text-4xl  md:text-5xl font-bold text-gray-800">
+          Complete <span className="text-blue-400">Meta Ads</span> Workflow
         </h2>
-        <p className="text-gray-600 mt-3">
+        <p className="text-gray-600 mt-5 text-lg">
           Everything you need to create, optimize, and scale your Meta ads in
           one platform
         </p>
@@ -78,46 +78,71 @@ const PlatformFeature = () => {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`px-5 py-2 rounded-full text-sm border flex items-center gap-2 font-medium shadow-sm transition 
+            className={`px-6 py-4 cursor-pointer rounded-lg   flex items-center gap-2 font-medium  transition 
               ${
                 activeTab === tab.id
-                  ? "bg-blue-100 text-blue-600 border-blue-200"
-                  : "bg-white text-gray-700 border-gray-200 hover:bg-gray-100"
+                  ? "bg-white text-blue-600 shadow-2xl shadow-gray-300 "
+                  : " text-gray-700 border-gray-200 hover:bg-gray-100"
               }`}
           >
-            {tab.icon}
+            <span className="text-black"> {tab.icon}</span>
             {tab.title}
           </button>
         ))}
       </div>
 
       {/* Dynamic Content */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl mx-auto bg-blue-50 shadow-lg p-10">
         {/* Left Text */}
-        <div className="bg-white shadow-lg rounded-2xl p-6 md:w-1/2 text-left">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <span className="text-blue-500 bg-blue-100 px-3 py-1 rounded-full text-sm">
+        <div className=" rounded-2xl p-6 md:w-1/2 text-left">
+          <h3 className="text-3xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="text-blue-500 mr-1 bg-blue-100 px-4 py-2 rounded-xl ">
               {current.id}
             </span>
             {current.title}
           </h3>
-          <ul className="text-gray-700 space-y-3 pl-4 list-disc">
+          <ul className="text-gray-700 space-y-3 pl-4 text-lg">
             {current.steps.map((step, index) => (
-              <li key={index}>
-                {step.includes("AI") ? (
-                  <span className="text-blue-500 font-medium underline cursor-pointer">
-                    {step}
-                  </span>
-                ) : (
-                  step
-                )}
+              <li key={index} className="flex items-start gap-2">
+                {/* Blue bullet icon */}
+                <span className="text-blue-500 mt-1 text-base">+</span>
+
+                {/* Highlight AI / Meta / Keywords */}
+                <span>
+                  {step.split(" ").map((word, i) =>
+                    [
+                      "AI Powered ",
+                      "Powered",
+                      "AI",
+
+                      "Meta",
+                      "instantly",
+                      "high-quality",
+                      "automated",
+                      "Targeting",
+                      "Manager",
+                      "300%",
+                      "Video",
+                      "Creation",
+                      "Performance",
+                      "Analysis",
+                      "Optimization",
+                    ].includes(word) ? (
+                      <span key={i} className="text-blue-500 font-medium">
+                        {word}{" "}
+                      </span>
+                    ) : (
+                      <span key={i}>{word} </span>
+                    )
+                  )}
+                </span>
               </li>
             ))}
           </ul>
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/2">
+        <div className="w-2/3">
           <img
             src={current.image}
             alt={current.title}
