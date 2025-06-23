@@ -5,7 +5,7 @@ import FeatureCard from "../../shared/FeatureCard";
 
 const PowerfullFeature = () => {
   return (
-    <div className="py-12 px-4 max-w-6xl mx-auto">
+    <div className="py-12 mt-4 px-4 container mx-auto">
       <p className="text-sm font-semibold text-blue-500 bg-blue-100 w-fit mx-auto px-4 py-1 rounded-full mb-4">
         PLATFORM FEATURES
       </p>
@@ -17,7 +17,7 @@ const PowerfullFeature = () => {
         Here's why our platform outperforms manual optimization and other tools
       </p>
 
-      <div className="space-y-8">
+      <div className="space-y-8  ">
         <FeatureCard
           feature="Meta Ads"
           title="Optimize your campaigns with"

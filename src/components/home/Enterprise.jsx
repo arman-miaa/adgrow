@@ -5,7 +5,7 @@ const Enterprise = () => {
     <div className="bg-white py-16">
    
       {/* Enterprise Section */}
-      <div className="mt-12 bg-gray-100 rounded-xl p-6 sm:p-8 md:p-10 max-w-3xl mx-auto shadow-md border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="mt-12 bg-gray-50 rounded-xl p-6 sm:p-8 md:p-10 max-w-3xl mx-auto shadow-md border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6">
         {" "}
         {/* */}
         <div className="text-center md:text-left">

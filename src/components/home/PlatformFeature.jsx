@@ -57,7 +57,7 @@ const PlatformFeature = () => {
   const current = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <section className="bg-[#f9fafb] py-20 px-4 text-center">
+    <section className="bg-gray-100 py-20 mt-16 px-4 text-center">
       {/* Title */}
       <div className="max-w-3xl mx-auto mb-10">
         <p className="text-sm font-semibold text-blue-500 bg-blue-100 w-fit mx-auto px-4 py-1 rounded-full mb-4">
@@ -92,7 +92,7 @@ const PlatformFeature = () => {
       </div>
 
       {/* Dynamic Content */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl mx-auto bg-blue-50 shadow-lg p-10">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 container mx-auto bg-gray-100 rounded-xl shadow-lg p-10">
         {/* Left Text */}
         <div className=" rounded-2xl p-6 md:w-1/2 text-left">
           <h3 className="text-3xl font-bold text-gray-900 mb-4 flex items-center gap-2">

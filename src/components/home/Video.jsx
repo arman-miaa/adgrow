@@ -2,7 +2,7 @@ import video from "../../assets/video.mp4";
 
 const Video = () => {
   return (
-    <div className="w-full px-4 py-10">
+    <div className="container mx-auto px-4 py-10 mt-16 ">
       <video
         className="w-full h-auto rounded-lg shadow-md"
         controls
