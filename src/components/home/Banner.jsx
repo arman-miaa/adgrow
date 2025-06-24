@@ -13,12 +13,13 @@ const Banner = () => {
 
       {/* Main Heading */}
       <div>
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-col md:flex-row ">
           <h1 className="text-4xl md:text-7xl font-bold text-gray-900 leading-tight ">
             Create Ads{" "}
           </h1>
-          <span className="inline-flex items-center gap-3 mx-2 mb-4 ">
-            <FaFacebook className="text-blue-600 w-4 h-4 md:w-8 md:h-8 p-1  border border-gray-300 rounded-lg " />
+          
+          <span className="inline-flex  mx-auto  items-center gap-3 md:mx-2 mb-4 ">
+            <FaFacebook className="text-blue-600 w-8 h-8 md:w-8 md:h-8 p-1  border border-gray-300 rounded-lg " />
             <FcGoogle className=" w-8 h-8 md:w-8 md:h-8 p-1 border border-gray-300 rounded-lg " />
           </span>
         </div>

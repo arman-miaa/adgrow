@@ -14,7 +14,7 @@ const FeatureCard = ({ feature,title, highlight, description, image }) => {
         <p className=" text-gray-600 text-xl mt-4">{description}</p>
       </div>
       <div className="flex-1">
-        <img src={image} alt="feature" className="w-full h-auto rounded-2xl p-2 shadow-sm " />
+        <img src={image} alt="feature" className="w-full h-auto rounded-2xl p-2  " />
       </div>
     </div>
   );
