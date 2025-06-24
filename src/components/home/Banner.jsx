@@ -26,7 +26,7 @@ const Banner = () => {
         <h1 className="text-4xl md:text-7xl  -mt-4 font-bold text-blue-600 leading-tight ">
           with Just 1 Click!
         </h1>
-        <hr className="w-1/2 mx-auto h-1 border-0 rounded bg-gradient-to-r from-blue-300 via-blue-600 to-blue-300" />
+        <hr className="w-2/5 mx-auto h-1 border-0 rounded bg-gradient-to-r from-blue-300 via-blue-600 to-blue-300" />
       </div>
 
       {/* Sub Text */}
