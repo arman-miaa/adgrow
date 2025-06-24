@@ -17,16 +17,18 @@ const Banner = () => {
           <h1 className="text-4xl md:text-7xl font-bold text-gray-900 leading-tight ">
             Create Ads{" "}
           </h1>
-          
+
           <span className="inline-flex  mx-auto  items-center gap-3 md:mx-2 mb-4 ">
             <FaFacebook className="text-blue-600 w-8 h-8 md:w-8 md:h-8 p-1  border border-gray-300 rounded-lg " />
             <FcGoogle className=" w-8 h-8 md:w-8 md:h-8 p-1 border border-gray-300 rounded-lg " />
           </span>
         </div>
-        <h1 className="text-4xl md:text-7xl  -mt-4 font-bold text-blue-600 leading-tight ">
-          with Just 1 Click!
-        </h1>
-        <hr className="w-2/5 mx-auto h-1 border-0 rounded bg-gradient-to-r from-blue-300 via-blue-600 to-blue-300" />
+        <div className="text-center">
+          <h1 className="text-4xl md:text-7xl -mt-4 font-bold text-blue-600 leading-tight inline-block relative">
+            with Just 1 Click!
+            <span className="block h-1 mt-2 rounded bg-gradient-to-r from-blue-300 via-blue-600 to-blue-300"></span>
+          </h1>
+        </div>
       </div>
 
       {/* Sub Text */}
@@ -44,7 +46,6 @@ const Banner = () => {
           <div className="flex-1 relative">
             <div className="flex items-center bg-white rounded-full shadow-lg border border-gray-200 px-4 py-4 md:py-3">
               <div className="flex items-center gap-2 text-blue-500 font-medium text-sm mr-2 flex-shrink-0">
-                
                 <div className="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center">
                   <div className="w-1 h-1 bg-white rounded-full" />
                 </div>
